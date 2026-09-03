@@ -1,0 +1,15 @@
+{
+  "name": "Vazal Maquinaria Pesada",
+  "short_name": "Vazal",
+  "description": "Renta y venta de maquinaria pesada y ligera, tendido de asfalto y obra civil.",
+  "lang": "es-MX",
+  "start_url": "/ventas-y-rentas.html",
+  "display": "standalone",
+  "background_color": "#0B0C0F",
+  "theme_color": "#0B0C0F",
+  "icons": [
+    { "src": "favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icono-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
