@@ -327,6 +327,10 @@ p:last-child{margin-bottom:0}
   font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;transition:.18s;
 }
 .eq-cta:hover{background:var(--amber);border-color:var(--amber);color:#0B0C0F}
+@media (hover:hover) and (pointer:fine){
+  .eq-cta{opacity:0;transition:opacity .18s ease,background .18s ease,color .18s ease,border-color .18s ease}
+  .eq-list li:hover .eq-cta,.eq-cta:focus-visible{opacity:1}
+}
 
 /* ---------- Carrusel ---------- */
 .slider{
@@ -1193,11 +1197,10 @@ p:last-child{margin-bottom:0}
           <a class="btn btn--dark" href="https://m.me/maquinariapesadaV" target="_blank" rel="noopener">Escribir por Messenger</a>
         </div>
       </div>
-      <div class="reveal fb-embed">
-        <iframe
-          title="Página de Facebook de Vazal Maquinaria Pesada"
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FmaquinariapesadaV&tabs=timeline&width=500&height=560&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
-          width="500" height="560" style="border:none;overflow:hidden" scrolling="no"
+      <div class="reveal fb-embed" id="fbEmbed">
+        <iframe id="fbFrame"
+          title="Publicaciones recientes de Vazal Maquinaria Pesada en Facebook"
+          height="560" style="border:none;overflow:hidden" scrolling="no"
           frameborder="0" allowfullscreen="true" loading="lazy"
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
@@ -1665,6 +1668,30 @@ p:last-child{margin-bottom:0}
       '&body=' + encodeURIComponent(payload());
     okBox.classList.add('is-on');
   });
+
+  /* ---------- Página de Facebook a la medida del contenedor ---------- */
+  (function () {
+    var box = document.getElementById('fbEmbed');
+    var frame = document.getElementById('fbFrame');
+    if (!box || !frame) return;
+    var last = 0;
+    function load() {
+      var w = Math.max(180, Math.min(500, Math.floor(box.clientWidth)));
+      if (Math.abs(w - last) < 12) return;
+      last = w;
+      frame.width = w;
+      frame.src = 'https://www.facebook.com/plugins/page.php?href=' +
+        encodeURIComponent('https://www.facebook.com/maquinariapesadaV') +
+        '&tabs=timeline&width=' + w + '&height=560&small_header=false' +
+        '&adapt_container_width=true&hide_cover=false&show_facepile=true&locale=es_LA';
+    }
+    load();
+    var t = null;
+    window.addEventListener('resize', function () {
+      clearTimeout(t);
+      t = setTimeout(load, 250);
+    }, { passive: true });
+  })();
 
   /* ---------- Animaciones de entrada ---------- */
   var reveals = document.querySelectorAll('.reveal');
