@@ -10,3 +10,6 @@ _*.html
 
 # Archivo de demostración generado por build-demo.js (1 MB, no versionar)
 vazal-ventas-y-rentas-DEMO.html
+
+.vercel
+.env*
