@@ -13,6 +13,7 @@ y construcción de obra pública y privada. Metepec, Estado de México.
 | Ruta | Descripción |
 |---|---|
 | `ventas-y-rentas.html` | Página **Ventas y Rentas** rediseñada y optimizada. HTML + CSS + JS en un solo archivo, sin dependencias ni build. |
+| `notas.html` | **Notas de obra**: seis notas sobre normas mexicanas, seguridad y criterio de obra. |
 | `sitemap.xml` | Sitemap nuevo: host canónico sin `www`, fechas reales, sin las páginas duplicadas. |
 | `robots.txt` | Robots nuevo, apuntando al sitemap correcto. |
 | `.htaccess` | Redirecciones 301 (`www` → sin `www`), compresión, caché y cabeceras. **Revisar antes de subir.** |
@@ -60,6 +61,17 @@ El detalle completo está en [`SEO.md`](SEO.md). En resumen, lo que se corrigió
 - JSON-LD ampliado de 2 a **5 entidades**: `LocalBusiness`+`Organization`, `WebSite`,
   `WebPage`+`BreadcrumbList`, `ItemList` con los 29 equipos y `FAQPage`.
 - Descripción acortada a 155 caracteres, `og:image:alt`, `hreflang` y `dns-prefetch`.
+- **Iconos rediseñados**: los PNG de clipart en naranja y turquesa se sustituyeron por
+  SVG propios en la paleta de la marca (excavadora, plancha vibradora, casco de obra y
+  vibrocompactador tándem), más los tres de la franja ámbar.
+
+**Página nueva `notas.html`**
+
+Seis notas editoriales para clientes: traslado en vías federales, seguridad STPS,
+recepción de una máquina rentada, compactación por capas, manejo legal del escombro y
+cómo leer una cotización de renta. Con `CollectionPage` + `ItemList` de `Article`.
+Las notas que citan normas oficiales deben ser validadas por el responsable técnico
+de Vazal antes de publicarse: las NOM se reforman.
 
 **A nivel de sitio**
 

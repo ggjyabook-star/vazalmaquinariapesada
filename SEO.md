@@ -111,6 +111,45 @@ leyendo el propio HTML, así que no se puede desincronizar:
 Dentro de `LocalBusiness` va además un `OfferCatalog` con los 29 equipos
 separados en pesada, ligera y tren de asfalto.
 
+### Iconos rediseñados
+
+Las cuatro tarjetas de líneas de equipo usaban PNG de clipart genérico en naranja y
+turquesa, colores que no existen en la paleta de Vazal. Se sustituyeron por SVG
+dibujados a la medida en ámbar, acero y negro: excavadora, plancha vibradora, casco
+de obra sobre camino y vibrocompactador tándem. Los tres iconos de la franja ámbar
+también cambiaron de genéricos (escudo, caja, globo) a propios del giro.
+
+Además de verse de la marca, ahora son vectoriales: nítidos en cualquier pantalla y
+sin peticiones de red.
+
+---
+
+## 2 bis. Página nueva: `notas.html`
+
+Sección editorial con seis notas para clientes, pensada para posicionar por búsquedas
+informativas y para sostener que Vazal sabe de lo que habla:
+
+| # | Nota | Tipo |
+|---|---|---|
+| 01 | Trasladar una máquina por carretera federal | Normatividad |
+| 02 | Lo que la STPS espera antes de encender | Seguridad |
+| 03 | Qué revisar al recibir una máquina rentada | Recomendación |
+| 04 | Compactación: por qué en capas | Técnica de obra |
+| 05 | A dónde va legalmente el escombro | Normatividad |
+| 06 | Cómo leer una cotización de renta | Recomendación |
+
+Lleva `CollectionPage` + `ItemList` de seis `Article` en JSON-LD, y está enlazada
+desde el menú, el pie y la sección de preguntas de Ventas y Rentas.
+
+> **Antes de publicar:** las notas 01, 02 y 05 citan normas oficiales mexicanas
+> (NOM-012-SCT-2-2017, NOM-004/017/031-STPS y NOM-161-SEMARNAT-2011). Las normas se
+> reforman y cada estado y municipio añade lo suyo, así que conviene que el
+> responsable técnico de Vazal confirme que las referencias siguen vigentes. La
+> página incluye un aviso al pie que aclara que el contenido es informativo y no
+> sustituye a la norma ni a una asesoría.
+
+---
+
 ### Otros ajustes
 
 - Descripción acortada a 155 caracteres para que Google no la corte.
@@ -184,6 +223,7 @@ Del hosting actual (Apache, por FTP):
 | Archivo | Qué hace |
 |---|---|
 | `ventas-y-rentas.html` | La página rediseñada |
+| `notas.html` | Página nueva de notas de obra |
 | `sitemap.xml` | Reemplaza el anterior (tenía `www` y fechas de 2021) |
 | `robots.txt` | Reemplaza el anterior (apuntaba al sitemap con `www`) |
 | `.htaccess` | Redirecciones 301, compresión y caché — **revisar antes** |
@@ -200,6 +240,7 @@ borraría la portada real. Lleva `noindex` justamente por eso.
 3. Pedir indexación de `ventas-y-rentas.html`.
 4. Comprobar en el probador de resultados enriquecidos de Google que aparezcan
    `FAQPage`, `LocalBusiness` y `BreadcrumbList`.
+5. Pedir indexación también de `notas.html`.
 5. Verificar que `https://www.vazalmaquinariapesada.com` redirija con 301.
 
 ---
