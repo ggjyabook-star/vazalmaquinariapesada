@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap de Vazal Maquinaria Pesada.
+
+  Host canónico: https://vazalmaquinariapesada.com (SIN www).
+  El sitemap anterior usaba https://www.vazalmaquinariapesada.com, y como el
+  servidor responde 200 en los dos hosts, Google veía el sitio duplicado.
+  El .htaccess de este repositorio redirige www -> sin www con un 301.
+
+  Quedan FUERA a propósito: /rentas.html, /respaldo.html y /home.html.
+  Son copias del mismo contenido heredadas del sitio anterior y solo diluyen
+  la autoridad de las páginas buenas.
+
+  Las fechas de <lastmod> son reales: solo ventas-y-rentas.html cambió.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://vazalmaquinariapesada.com/</loc>
+    <lastmod>2021-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://vazalmaquinariapesada.com/images/vazal-grande-texto.png</image:loc>
+      <image:title>Vazal Maquinaria Pesada — Generando Caminos</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://vazalmaquinariapesada.com/ventas-y-rentas.html</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://vazalmaquinariapesada.com/images/PicsArt_02-01-03.08.47.jpg</image:loc>
+      <image:title>Renta y venta de maquinaria pesada en Metepec y Toluca</image:title>
+      <image:caption>Maquinaria pesada de Vazal trabajando en obra</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vazalmaquinariapesada.com/gallery/PAV1.png</image:loc>
+      <image:title>Pavimentadora para tendido de carpeta asfáltica</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vazalmaquinariapesada.com/gallery/EXCA1.png</image:loc>
+      <image:title>Excavadora hidráulica sobre orugas en renta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vazalmaquinariapesada.com/gallery/MOTO1.png</image:loc>
+      <image:title>Motoconformadora para nivelación de terracerías</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vazalmaquinariapesada.com/gallery/RETRO1.png</image:loc>
+      <image:title>Retroexcavadora con cucharón y martillo hidráulico</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://vazalmaquinariapesada.com/maquinaria-ligera.html</loc>
+    <lastmod>2021-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vazalmaquinariapesada.com/obras.html</loc>
+    <lastmod>2021-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vazalmaquinariapesada.com/quienes-somos-.html</loc>
+    <lastmod>2021-05-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vazalmaquinariapesada.com/contacto.html</loc>
+    <lastmod>2021-05-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

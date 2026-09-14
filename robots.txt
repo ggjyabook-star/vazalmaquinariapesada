@@ -1,0 +1,17 @@
+# robots.txt — Vazal Maquinaria Pesada
+# https://vazalmaquinariapesada.com
+
+User-agent: *
+Allow: /
+
+# Rutas internas del gestor anterior
+Disallow: /admin
+Disallow: /captcha
+Disallow: /imemail
+
+# Nota: /rentas.html, /respaldo.html y /home.html son copias heredadas del sitio
+# anterior. NO se bloquean aquí a propósito: el .htaccess las redirige con un 301
+# a la página buena, y Google necesita poder rastrearlas para ver esa redirección.
+# Si se bloquearan, la redirección nunca se procesaría y seguirían indexadas.
+
+Sitemap: https://vazalmaquinariapesada.com/sitemap.xml

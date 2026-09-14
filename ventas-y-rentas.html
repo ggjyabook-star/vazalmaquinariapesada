@@ -4,11 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Renta y Venta de Maquinaria Pesada en Metepec y Toluca | Vazal</title>
-<meta name="description" content="Renta y venta de maquinaria pesada y ligera, trenes completos para tendido de asfalto, nivelación, excavación y demolición. Obra pública y privada en toda la República Mexicana. Cotiza al 722 896 4282.">
+<meta name="description" content="29 líneas de maquinaria pesada y ligera en renta y venta, trenes completos de asfalto y obra pública en toda México. Cotiza al 722 896 4282.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="Vazal Maquinaria Pesada">
 <meta name="theme-color" content="#0E0F12">
 <link rel="canonical" href="https://vazalmaquinariapesada.com/ventas-y-rentas.html">
+<link rel="alternate" hreflang="es-mx" href="https://vazalmaquinariapesada.com/ventas-y-rentas.html">
+<link rel="alternate" hreflang="x-default" href="https://vazalmaquinariapesada.com/ventas-y-rentas.html">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Vazal Maquinaria Pesada">
@@ -19,10 +21,12 @@
 <meta property="og:image" content="https://vazalmaquinariapesada.com/images/PicsArt_02-01-03.08.47.jpg">
 <meta property="og:image:width" content="558">
 <meta property="og:image:height" content="307">
+<meta property="og:image:alt" content="Maquinaria pesada de Vazal trabajando en obra">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Renta y Venta de Maquinaria Pesada | Vazal">
 <meta name="twitter:description" content="Maquinaria pesada y ligera, trenes completos de asfalto y obra civil en toda la República Mexicana.">
 <meta name="twitter:image" content="https://vazalmaquinariapesada.com/images/PicsArt_02-01-03.08.47.jpg">
+<meta name="twitter:image:alt" content="Maquinaria pesada de Vazal trabajando en obra">
 
 <link rel="icon" href="brand/icono.svg" type="image/svg+xml">
 <link rel="icon" href="brand/favicon-32.png" sizes="32x32">
@@ -30,6 +34,7 @@
 <link rel="manifest" href="brand/site.webmanifest">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://www.facebook.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="images/PicsArt_02-01-03.08.47.webp" type="image/webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -313,16 +318,25 @@ p:last-child{margin-bottom:0}
 .panel__note{color:var(--inv-soft);font-size:14px;margin-bottom:18px}
 .eq-list{display:grid}
 .eq-list li{
-  display:flex;gap:12px;align-items:center;padding:10px 0;
+  display:flex;gap:12px;align-items:flex-start;padding:13px 0;
   border-bottom:1px solid var(--line);font-size:14.5px;color:#D3D7DE;line-height:1.42;
+  scroll-margin-top:96px;
 }
 .eq-list li::before{
-  content:"";width:16px;height:16px;flex:none;background:var(--amber);
+  content:"";width:16px;height:16px;flex:none;margin-top:3px;background:var(--amber);
   -webkit-mask:var(--check) center/contain no-repeat;mask:var(--check) center/contain no-repeat;
+}
+.eq-info{flex:1;min-width:0}
+.eq-name{
+  font-family:var(--body);font-size:14.5px;font-weight:600;line-height:1.42;
+  letter-spacing:0;text-transform:none;color:#E7EAEF;margin:0;
+}
+.eq-desc{
+  margin:3px 0 0;font-size:13px;line-height:1.5;color:var(--inv-soft);text-wrap:pretty;
 }
 .eq-list span{flex:1;min-width:0}
 .eq-cta{
-  flex:none;min-height:36px;padding:8px 12px;border:1px solid var(--line-2);background:transparent;
+  flex:none;align-self:center;min-height:36px;padding:8px 12px;border:1px solid var(--line-2);background:transparent;
   color:var(--inv-soft);border-radius:var(--r);cursor:pointer;
   font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;transition:.18s;
 }
@@ -330,6 +344,95 @@ p:last-child{margin-bottom:0}
 @media (hover:hover) and (pointer:fine){
   .eq-cta{opacity:0;transition:opacity .18s ease,background .18s ease,color .18s ease,border-color .18s ease}
   .eq-list li:hover .eq-cta,.eq-cta:focus-visible{opacity:1}
+}
+
+
+/* ---------- Obra pública ---------- */
+.gov-grid{display:grid;gap:18px;margin-bottom:26px}
+.gov{
+  padding:24px 22px;border:1px solid var(--line);border-radius:var(--r-lg);
+  background:linear-gradient(165deg,rgba(255,255,255,.045),rgba(255,255,255,0));
+}
+.gov__tag{
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:13px;
+  font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--amber);
+}
+.gov__tag::before{content:"";width:18px;height:2px;background:var(--amber)}
+.gov h3{font-size:22px;margin-bottom:10px}
+.gov > p{color:var(--inv-soft);font-size:14.5px;line-height:1.6}
+.gov__list{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:7px}
+.gov__list li{
+  position:relative;padding-left:17px;font-size:13.5px;line-height:1.5;color:#C9CFD8;
+}
+.gov__list li::before{
+  content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;
+  background:var(--amber);transform:rotate(45deg);
+}
+.gov-band{
+  padding:26px 22px;border-radius:var(--r-lg);
+  background:var(--amber);color:#0B0C0F;margin-bottom:26px;
+}
+.gov-band__title{font-size:23px;margin-bottom:20px}
+.gov-band__grid{display:grid;gap:18px}
+.gov-band__grid li{font-size:14px;line-height:1.55;color:rgba(11,12,15,.78)}
+.gov-band__grid strong{
+  display:block;margin-bottom:3px;font-family:var(--display);font-size:16px;
+  letter-spacing:.02em;text-transform:uppercase;color:#0B0C0F;
+}
+.gov-docs{
+  padding:26px 22px;border:1px solid var(--line-2);border-radius:var(--r-lg);
+  background:rgba(255,255,255,.03);
+}
+.gov-docs__head h3{font-size:22px;margin-bottom:9px}
+.gov-docs__head p{color:var(--inv-soft);font-size:14.5px;margin-bottom:20px}
+.gov-docs__list{display:grid;gap:9px;margin-bottom:24px}
+.gov-docs__list li{
+  display:flex;gap:11px;align-items:flex-start;font-size:13.5px;line-height:1.5;color:#D3D7DE;
+}
+.gov-docs__list li::before{
+  content:"";width:15px;height:15px;flex:none;margin-top:3px;background:var(--amber);
+  -webkit-mask:var(--check) center/contain no-repeat;mask:var(--check) center/contain no-repeat;
+}
+.gov-docs__cta{display:flex;flex-wrap:wrap;gap:12px}
+
+@media (min-width:720px){
+  .gov-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+  .gov{padding:28px 26px}
+  .gov-band{padding:32px 30px}
+  .gov-band__grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 30px}
+  .gov-docs{padding:32px 30px}
+  .gov-docs__list{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 30px}
+}
+
+
+/* ---------- Preguntas frecuentes ---------- */
+.faq{max-width:880px;border-top:1px solid var(--line-dk)}
+.faq__item{border-bottom:1px solid var(--line-dk)}
+.faq__item summary{
+  display:flex;align-items:flex-start;gap:14px;padding:18px 0;
+  cursor:pointer;list-style:none;
+}
+.faq__item summary::-webkit-details-marker{display:none}
+.faq__item summary::after{
+  content:"";flex:none;width:13px;height:13px;margin-top:6px;margin-left:auto;
+  border-right:2.5px solid var(--amber-dk);border-bottom:2.5px solid var(--amber-dk);
+  transform:rotate(45deg);transition:transform .22s ease;
+}
+.faq__item[open] summary::after{transform:rotate(-135deg)}
+.faq__item summary h3{
+  font-size:17px;line-height:1.22;text-transform:none;letter-spacing:-.01em;
+  font-family:var(--display);color:var(--txt);
+}
+.faq__item summary:hover h3{color:var(--amber-dk)}
+.faq__a{padding:0 27px 20px 0;color:var(--txt-soft);font-size:15px;line-height:1.66}
+.faq__a a{color:var(--amber-dk);text-decoration:underline;text-underline-offset:3px}
+.faq__a strong{color:var(--txt)}
+@media (prefers-reduced-motion:reduce){.faq__item summary::after{transition:none}}
+@media (min-width:720px){
+  .faq__item summary{padding:22px 0}
+  .faq__item summary h3{font-size:20px}
+  .faq__a{font-size:15.5px;padding-bottom:24px}
 }
 
 /* ---------- Carrusel ---------- */
@@ -578,7 +681,7 @@ p:last-child{margin-bottom:0}
   .cards{grid-template-columns:repeat(4,1fr);gap:22px}
   .card h3{font-size:22px}
   .catalog{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:52px}
-  .eq-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 26px}
+  .catalog > div:last-child{position:sticky;top:96px}
   .split{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:52px}
   .svc-grid{gap:24px}
   .svc__media{aspect-ratio:4/3}
@@ -834,22 +937,118 @@ p:last-child{margin-bottom:0}
           <h3 class="panel__title">Productos. Maquinaria Pesada</h3>
           <p class="panel__note">16 líneas de equipo para movimiento de tierras, acarreos, izaje y compactación.</p>
           <ul class="eq-list">
-            <li><span>Camión Torton y/o Góndola, 7, 14 y 30 m³.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Camión de servicio (Marimba).</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Camión con lowboy o cama baja.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Concretera.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Excavadora con o sin martillo 320, 325, 330, 336 y 345.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Grúa Hiab 2½ toneladas.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Grúa Titan 18 toneladas.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Genie 12 y 15 m.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Minicargador con o sin martillo.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Miniexcavadora.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Montacargas de 1½ a 4½ toneladas.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Motoconformadora con o sin ripper, 12 G, 120 B, 135 H, 140 H, 143 H.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Payloader 938 H, 950 H y 966 H.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Pipa de agua de 10,000, 12,000 y 15,000 litros.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Retroexcavadora con o sin martillo 416 D, E, F y 420 D, E, F.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Vibrocompactador y vibrocompactador pata de cabra.</span><button type="button" class="eq-cta">Cotizar</button></li>
+            <li id="eq-camion-torton-gondola">
+              <div class="eq-info">
+                <h4 class="eq-name">Camión Torton y/o Góndola, 7, 14 y 30 m³</h4>
+                <p class="eq-desc">Acarreo de material, tepetate y escombro. Cajas de 7, 14 y 30 m³ para terracerías, despalme y retiro de producto de excavación.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-camion-marimba">
+              <div class="eq-info">
+                <h4 class="eq-name">Camión de servicio (Marimba)</h4>
+                <p class="eq-desc">Transporte de tubería, poste, varilla y material largo en obra lineal, drenaje y electrificación.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-camion-lowboy">
+              <div class="eq-info">
+                <h4 class="eq-name">Camión con lowboy o cama baja</h4>
+                <p class="eq-desc">Traslado de maquinaria pesada entre frentes de obra. Movilización de excavadora, motoconformadora y payloader en toda la República.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-concretera">
+              <div class="eq-info">
+                <h4 class="eq-name">Concretera</h4>
+                <p class="eq-desc">Mezclado de concreto a pie de obra para firmes, guarniciones, banquetas y colados de volumen medio.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-excavadora">
+              <div class="eq-info">
+                <h4 class="eq-name">Excavadora con o sin martillo 320, 325, 330, 336 y 345</h4>
+                <p class="eq-desc">Excavación, carga y demolición con martillo hidráulico. De 20 a 45 toneladas para zanjas, drenaje, terracerías y obra pesada.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-grua-hiab">
+              <div class="eq-info">
+                <h4 class="eq-name">Grúa Hiab 2½ toneladas</h4>
+                <p class="eq-desc">Grúa articulada sobre camión para carga, descarga y maniobras de hasta 2.5 toneladas en obra urbana.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-grua-titan">
+              <div class="eq-info">
+                <h4 class="eq-name">Grúa Titan 18 toneladas</h4>
+                <p class="eq-desc">Izaje de estructura, trabes y equipo pesado hasta 18 toneladas en obra civil e industrial.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-genie">
+              <div class="eq-info">
+                <h4 class="eq-name">Genie 12 y 15 m</h4>
+                <p class="eq-desc">Plataforma de elevación de 12 y 15 metros para trabajo en altura, fachadas, naves industriales y mantenimiento.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-minicargador">
+              <div class="eq-info">
+                <h4 class="eq-name">Minicargador con o sin martillo</h4>
+                <p class="eq-desc">Limpieza, acarreo corto, despalme y demolición ligera en espacios reducidos. Admite martillo, fresadora y barredora.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-miniexcavadora">
+              <div class="eq-info">
+                <h4 class="eq-name">Miniexcavadora</h4>
+                <p class="eq-desc">Excavación en espacios confinados: zanjas de agua potable, drenaje sanitario y obra urbana de poca maniobra.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-montacargas">
+              <div class="eq-info">
+                <h4 class="eq-name">Montacargas de 1½ a 4½ toneladas</h4>
+                <p class="eq-desc">Maniobra y estiba de material en almacén, planta industrial y patio de obra, de 1.5 a 4.5 toneladas.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-motoconformadora">
+              <div class="eq-info">
+                <h4 class="eq-name">Motoconformadora con o sin ripper, 12 G, 120 B, 135 H, 140 H, 143 H</h4>
+                <p class="eq-desc">Nivelación de terracerías, conformación de subrasante y base hidráulica, y escarificado con ripper para caminos y vialidades.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-payloader">
+              <div class="eq-info">
+                <h4 class="eq-name">Payloader 938 H, 950 H y 966 H</h4>
+                <p class="eq-desc">Cargador frontal para carga de material, alimentación de planta y acarreo corto. Cucharones de 2 a 4 m³.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-pipa-agua">
+              <div class="eq-info">
+                <h4 class="eq-name">Pipa de agua de 10,000, 12,000 y 15,000 litros</h4>
+                <p class="eq-desc">Riego para compactación, control de polvo y humedecido de terracerías. Capacidades de 10,000 a 15,000 litros.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-retroexcavadora">
+              <div class="eq-info">
+                <h4 class="eq-name">Retroexcavadora con o sin martillo 416 D, E, F y 420 D, E, F</h4>
+                <p class="eq-desc">Excavación, relleno y carga en obra urbana. Con martillo hidráulico para ruptura de pavimento y concreto.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-vibrocompactador">
+              <div class="eq-info">
+                <h4 class="eq-name">Vibrocompactador y vibrocompactador pata de cabra</h4>
+                <p class="eq-desc">Compactación de terracerías, base y sub-base. Pata de cabra para suelos arcillosos y rellenos de alto espesor.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
           </ul>
         </div>
 
@@ -857,12 +1056,48 @@ p:last-child{margin-bottom:0}
           <h3 class="panel__title">Maquinaria Ligera</h3>
           <p class="panel__note">Equipo de apoyo para acabados, compactación puntual y suministro de energía en obra.</p>
           <ul class="eq-list">
-            <li><span>Bailarina.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Bomba de agua.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Compresor de aire.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Cortadora de concreto.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Planta de luz de diferentes kW.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Plancha vibradora.</span><button type="button" class="eq-cta">Cotizar</button></li>
+            <li id="eq-bailarina">
+              <div class="eq-info">
+                <h4 class="eq-name">Bailarina</h4>
+                <p class="eq-desc">Compactador de impacto para zanjas, rellenos y áreas estrechas donde no entra el rodillo.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-bomba-agua">
+              <div class="eq-info">
+                <h4 class="eq-name">Bomba de agua</h4>
+                <p class="eq-desc">Achique y desagüe de excavaciones, zanjas y cárcamos inundados en obra.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-compresor">
+              <div class="eq-info">
+                <h4 class="eq-name">Compresor de aire</h4>
+                <p class="eq-desc">Suministro de aire para rotomartillo, pistola y herramienta neumática en demolición y ruptura.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-cortadora-concreto">
+              <div class="eq-info">
+                <h4 class="eq-name">Cortadora de concreto</h4>
+                <p class="eq-desc">Corte recto de pavimento asfáltico y losa de concreto para rupturas, registros y juntas.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-planta-luz">
+              <div class="eq-info">
+                <h4 class="eq-name">Planta de luz de diferentes kW</h4>
+                <p class="eq-desc">Generación eléctrica para frentes de obra sin acometida, trabajos nocturnos y campamentos.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-plancha-vibradora">
+              <div class="eq-info">
+                <h4 class="eq-name">Plancha vibradora</h4>
+                <p class="eq-desc">Compactación superficial de base, adoquín y carpeta en banquetas, andadores y bacheo.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
           </ul>
         </div>
 
@@ -870,13 +1105,55 @@ p:last-child{margin-bottom:0}
           <h3 class="panel__title">Trenes Completos de Asfalto</h3>
           <p class="panel__note">Fresado, petrolizado, tendido y compactación con un solo proveedor.</p>
           <ul class="eq-list">
-            <li><span>Barredora.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Minicargadores con aditamento de fresadora de 55 a 60 de corte a lo ancho.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Neumático.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Pavimentadora.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Perfiladora PM 465, PM 565, PM 200, PM 201, RX 500 y PR 600.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Petrolizadora.</span><button type="button" class="eq-cta">Cotizar</button></li>
-            <li><span>Vibrocompactador tipo tándem.</span><button type="button" class="eq-cta">Cotizar</button></li>
+            <li id="eq-barredora">
+              <div class="eq-info">
+                <h4 class="eq-name">Barredora</h4>
+                <p class="eq-desc">Limpieza de la superficie antes del riego de liga. Retira polvo y material suelto para garantizar la adherencia.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-fresadora-minicargador">
+              <div class="eq-info">
+                <h4 class="eq-name">Minicargadores con aditamento de fresadora de 55 a 60 de corte a lo ancho</h4>
+                <p class="eq-desc">Fresado puntual de 55 a 60 cm de ancho para bacheo, cajeo y despiece de carpeta en obra urbana.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-neumatico">
+              <div class="eq-info">
+                <h4 class="eq-name">Neumático</h4>
+                <p class="eq-desc">Compactador de rodillo neumático para el sellado final de la carpeta y cierre de la textura.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-pavimentadora">
+              <div class="eq-info">
+                <h4 class="eq-name">Pavimentadora</h4>
+                <p class="eq-desc">Tendido de carpeta asfáltica con espesor y bombeo controlados, de 5 a 10 cm en un solo paso.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-perfiladora">
+              <div class="eq-info">
+                <h4 class="eq-name">Perfiladora PM 465, PM 565, PM 200, PM 201, RX 500 y PR 600</h4>
+                <p class="eq-desc">Fresado de carpeta asfáltica a gran escala para renivelación, reciclado y retiro de pavimento deteriorado.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-petrolizadora">
+              <div class="eq-info">
+                <h4 class="eq-name">Petrolizadora</h4>
+                <p class="eq-desc">Aplicación de riego de impregnación y riego de liga con dosificación uniforme antes del tendido.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
+            <li id="eq-tandem">
+              <div class="eq-info">
+                <h4 class="eq-name">Vibrocompactador tipo tándem</h4>
+                <p class="eq-desc">Compactación primaria de la carpeta recién tendida con rodillo doble liso vibratorio.</p>
+              </div>
+              <button type="button" class="eq-cta">Cotizar</button>
+            </li>
           </ul>
         </div>
       </div>
@@ -1047,6 +1324,131 @@ p:last-child{margin-bottom:0}
   </div>
 </section>
 
+<!-- ============================ OBRA PÚBLICA ============================ -->
+<section class="section section--dark on-dark" id="obra-publica" aria-labelledby="t-obra-publica">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Obra pública</p>
+      <h2 id="t-obra-publica">Maquinaria para obra pública: dependencias de gobierno y contratistas</h2>
+      <p>
+        Vazal trabaja en obra pública federal, estatal y municipal en toda la República Mexicana.
+        Atendemos tanto a dependencias y organismos operadores como a las constructoras que ejecutan
+        sus contratos, con flota propia, movilización incluida y facturación a nombre de
+        Arrendadora Vazal, S.A. de C.V.
+      </p>
+    </div>
+
+    <div class="gov-grid">
+      <article class="gov reveal">
+        <span class="gov__tag">Orden federal</span>
+        <h3>Carreteras y caminos</h3>
+        <p>
+          Trenes completos de asfalto, terracerías y movimiento de tierras para tramos carreteros,
+          ampliación de cuerpos, acotamientos y conservación periódica de la red.
+        </p>
+        <ul class="gov__list">
+          <li>Fresado y renivelación de carpeta asfáltica</li>
+          <li>Riego de impregnación y riego de liga</li>
+          <li>Tendido de carpeta de 5 a 10 cm de espesor</li>
+          <li>Compactación con tándem y neumático</li>
+        </ul>
+      </article>
+
+      <article class="gov reveal">
+        <span class="gov__tag">Orden estatal</span>
+        <h3>Vialidades y obra de estado</h3>
+        <p>
+          Equipo para libramientos, distribuidores, caminos rurales y obra de infraestructura
+          educativa, hidráulica y de salud ejecutada por gobiernos estatales.
+        </p>
+        <ul class="gov__list">
+          <li>Terracerías, subrasante y base hidráulica</li>
+          <li>Excavación para drenaje y agua potable</li>
+          <li>Nivelación con motoconformadora y ripper</li>
+          <li>Acarreo de material y retiro de producto</li>
+        </ul>
+      </article>
+
+      <article class="gov reveal">
+        <span class="gov__tag">Orden municipal</span>
+        <h3>Bacheo y obra urbana</h3>
+        <p>
+          Frentes cortos y equipo de maniobra reducida para programas municipales de bacheo,
+          repavimentación, guarniciones, banquetas y limpieza de vialidades.
+        </p>
+        <ul class="gov__list">
+          <li>Bacheo con fresadora de 55 a 60 cm</li>
+          <li>Miniexcavadora y minicargador en calle</li>
+          <li>Demolición y retiro de escombro</li>
+          <li>Riego con pipa y control de polvo</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="gov-band reveal">
+      <h3 class="gov-band__title">Lo que resolvemos en un contrato de obra pública</h3>
+      <ul class="gov-band__grid">
+        <li>
+          <strong>Flota propia</strong>
+          29 líneas de equipo entre maquinaria pesada, ligera y tren de asfalto, sin intermediarios.
+        </li>
+        <li>
+          <strong>Movilización incluida</strong>
+          Lowboy y cama baja propios para trasladar el equipo entre frentes de obra.
+        </li>
+        <li>
+          <strong>Con o sin operador</strong>
+          Operadores con experiencia en obra pública, o equipo desnudo si tu cuadrilla lo opera.
+        </li>
+        <li>
+          <strong>Por periodo o por contrato</strong>
+          Renta por día, semana o mes, ajustada al programa de obra y a los tiempos de estimación.
+        </li>
+        <li>
+          <strong>Cobertura nacional</strong>
+          Atendemos frentes en 32 estados de la República Mexicana.
+        </li>
+        <li>
+          <strong>Garantía de funcionabilidad</strong>
+          Si un equipo falla en obra, respondemos para que el frente no se detenga.
+        </li>
+      </ul>
+    </div>
+
+    <!--
+      ═══════════════════════════════════════════════════════════════════════
+      PENDIENTE DEL CLIENTE — confirmar antes de publicar en producción.
+      Vazal debe validar y, en su caso, completar con datos reales:
+        · Registro en padrón de contratistas (federal / estatal) y número.
+        · Obras de referencia: dependencia, tramo, año y monto.
+        · Vigencia de pólizas de seguro de equipo y responsabilidad civil.
+        · Número de equipos propios por línea.
+      Si alguno no aplica, borrar el <li> correspondiente del bloque de abajo.
+      ═══════════════════════════════════════════════════════════════════════
+    -->
+    <div class="gov-docs reveal">
+      <div class="gov-docs__head">
+        <h3>Documentación para concurso y contratación</h3>
+        <p>Integramos el expediente que piden las convocatorias. Solicítalo y lo entregamos en digital.</p>
+      </div>
+      <ul class="gov-docs__list">
+        <li>Acta constitutiva y poder del representante legal</li>
+        <li>RFC y constancia de situación fiscal</li>
+        <li>Opinión de cumplimiento de obligaciones fiscales</li>
+        <li>Carátula bancaria para pago por transferencia</li>
+        <li>Relación de maquinaria disponible</li>
+        <li>Currículum de obra y referencias</li>
+      </ul>
+      <div class="gov-docs__cta">
+        <a class="btn" href="#cotizar">Solicitar expediente y cotización
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="mailto:gerenciacomercial@vazalmaquinariapesada.com?subject=Obra%20p%C3%BAblica%20%E2%80%94%20solicitud%20de%20expediente">Escribir a gerencia comercial</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============================ PROCESO ============================ -->
 <section class="section section--white" aria-labelledby="t-proceso">
   <div class="wrap">
@@ -1067,6 +1469,111 @@ p:last-child{margin-bottom:0}
         <h3>Movilizamos a tu frente</h3>
         <p>Trasladamos la maquinaria con camión lowboy o cama baja y coordinamos la entrega en el sitio de la obra.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PREGUNTAS FRECUENTES ============================ -->
+<section class="section" id="preguntas" aria-labelledby="t-faq">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 id="t-faq">Dudas antes de rentar maquinaria</h2>
+      <p>Lo que más nos preguntan constructoras, dependencias y particulares antes de cerrar una renta.</p>
+    </div>
+
+    <div class="faq reveal">
+      <details class="faq__item">
+        <summary><h3>¿Cuánto cuesta rentar maquinaria pesada en el Estado de México?</h3></summary>
+        <div class="faq__a">
+          <p>
+            El precio depende del equipo, del periodo de renta, de si va con o sin operador y de la
+            distancia del frente de obra para la movilización. Envíanos el equipo que necesitas,
+            el municipio y las fechas, y te regresamos una cotización formal con todo desglosado.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary><h3>¿La renta incluye operador?</h3></summary>
+        <div class="faq__a">
+          <p>
+            Tú decides. Entregamos el equipo <strong>con operador</strong>, con personal
+            con experiencia en obra pública y privada, o <strong>sin operador</strong> si tu
+            cuadrilla lo va a manejar. Indícalo en la solicitud de cotización.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary><h3>¿Rentan por día, por semana o por mes?</h3></summary>
+        <div class="faq__a">
+          <p>
+            Los tres esquemas. Ajustamos el periodo al programa de obra: desde maniobras de
+            un día hasta contratos de varios meses con equipo asignado a un frente fijo.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary><h3>¿Quién traslada la maquinaria hasta la obra?</h3></summary>
+        <div class="faq__a">
+          <p>
+            Nosotros. Contamos con <strong>camión con lowboy y cama baja propios</strong> para
+            movilizar excavadora, motoconformadora, payloader y vibrocompactador entre frentes.
+            La movilización se cotiza según la distancia y va incluida en la propuesta.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary><h3>¿Trabajan con dependencias de gobierno y obra pública?</h3></summary>
+        <div class="faq__a">
+          <p>
+            Sí. Participamos en obra pública federal, estatal y municipal, y también atendemos a
+            las constructoras que ejecutan esos contratos. Integramos el expediente de
+            documentación que piden las convocatorias y facturamos a nombre de
+            Arrendadora Vazal, S.A. de C.V.
+            <a href="#obra-publica">Ver el detalle de obra pública</a>.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary><h3>¿En qué estados tienen cobertura?</h3></summary>
+        <div class="faq__a">
+          <p>
+            Operamos en toda la República Mexicana, con presencia en 32 estados. Nuestra base está
+            en <strong>Metepec, Estado de México</strong>, por lo que la respuesta es más rápida en
+            Toluca, Metepec, Lerma, Zinacantepec, el Valle de Toluca y la Zona Metropolitana del
+            Valle de México.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary><h3>¿Qué incluye un tren completo de asfalto?</h3></summary>
+        <div class="faq__a">
+          <p>
+            El tren completo cubre todo el proceso con un solo proveedor: <strong>perfiladora</strong>
+            para el fresado, <strong>barredora</strong> para limpiar la superficie,
+            <strong>petrolizadora</strong> para el riego de impregnación y de liga,
+            <strong>pavimentadora</strong> para el tendido de la carpeta de 5 a 10 cm, y
+            <strong>vibrocompactador tándem y neumático</strong> para la compactación y el sellado.
+            <a href="#asfalto">Ver cómo se ejecuta</a>.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary><h3>¿Además de rentar, venden maquinaria?</h3></summary>
+        <div class="faq__a">
+          <p>
+            Sí. Manejamos venta y renta de maquinaria pesada y ligera. Si buscas comprar,
+            dinos qué línea de equipo te interesa y revisamos disponibilidad de inventario.
+          </p>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -1264,6 +1771,8 @@ p:last-child{margin-bottom:0}
         <li><a href="#servicios">Nivelación y compactación</a></li>
         <li><a href="#servicios">Excavaciones</a></li>
         <li><a href="#servicios">Demoliciones y retiro de escombro</a></li>
+        <li><a href="#obra-publica">Obra pública y dependencias</a></li>
+        <li><a href="#preguntas">Preguntas frecuentes</a></li>
       </ul>
     </nav>
 
@@ -1336,17 +1845,25 @@ p:last-child{margin-bottom:0}
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["LocalBusiness", "Organization"],
+      "@type": [
+        "LocalBusiness",
+        "Organization"
+      ],
       "@id": "https://vazalmaquinariapesada.com/#organizacion",
       "name": "Vazal Maquinaria Pesada",
+      "alternateName": "Arrendadora Vazal",
       "legalName": "Arrendadora Vazal, S.A. de C.V.",
       "slogan": "Generando Caminos",
       "url": "https://vazalmaquinariapesada.com/",
-      "logo": "https://vazalmaquinariapesada.com/images/vazal-grande-texto.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vazalmaquinariapesada.com/images/vazal-grande-texto.png"
+      },
       "image": "https://vazalmaquinariapesada.com/images/PicsArt_02-01-03.08.47.jpg",
-      "description": "Renta y venta de maquinaria pesada y ligera, trenes completos para tendido de asfalto, nivelación, excavación, demolición y construcción de obra pública y privada.",
+      "description": "Renta y venta de maquinaria pesada y ligera, trenes completos para tendido de asfalto, nivelación, excavación, demolición y construcción de obra pública y privada en toda la República Mexicana.",
       "telephone": "+52-722-896-4282",
       "email": "gerenciacomercial@vazalmaquinariapesada.com",
+      "currenciesAccepted": "MXN",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Priv. Melchor Ocampo 179-227, Espíritu Santo",
@@ -1354,52 +1871,1320 @@ p:last-child{margin-bottom:0}
         "addressRegion": "Estado de México",
         "addressCountry": "MX"
       },
-      "areaServed": { "@type": "Country", "name": "México" },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Priv.+Melchor+Ocampo+179-227,+Espiritu+Santo,+Metepec,+Estado+de+Mexico",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "name": "Gerencia comercial",
+          "telephone": "+52-722-896-4282",
+          "email": "gerenciacomercial@vazalmaquinariapesada.com",
+          "areaServed": "MX",
+          "availableLanguage": "es-MX"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "name": "Administración",
+          "telephone": "+52-722-908-8883",
+          "email": "administracion@vazalmaquinariapesada.com",
+          "areaServed": "MX",
+          "availableLanguage": "es-MX"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "México"
+        },
+        {
+          "@type": "State",
+          "name": "Estado de México"
+        },
+        {
+          "@type": "City",
+          "name": "Metepec"
+        },
+        {
+          "@type": "City",
+          "name": "Toluca"
+        },
+        {
+          "@type": "City",
+          "name": "Lerma"
+        },
+        {
+          "@type": "City",
+          "name": "Zinacantepec"
+        },
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        }
+      ],
+      "knowsAbout": [
+        "Renta de maquinaria pesada",
+        "Venta de maquinaria pesada",
+        "Tendido de asfalto",
+        "Fresado de carpeta asfáltica",
+        "Terracerías",
+        "Obra pública",
+        "Movimiento de tierras",
+        "Nivelación y compactación de suelos",
+        "Excavaciones",
+        "Demoliciones"
+      ],
       "sameAs": [
         "https://www.facebook.com/maquinariapesadaV/",
         "https://mx.linkedin.com/company/arrendadora-vazal-s-a-de-c-v",
         "https://www.instagram.com/vazalmaquinaria/"
       ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tendido de carpeta asfáltica",
+            "description": "Tren completo de asfalto: fresado, riego de impregnación y de liga, tendido de carpeta de 5 a 10 cm y compactación con tándem y neumático.",
+            "provider": {
+              "@id": "https://vazalmaquinariapesada.com/#organizacion"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "México"
+            }
+          },
+          "seller": {
+            "@id": "https://vazalmaquinariapesada.com/#organizacion"
+          },
+          "priceCurrency": "MXN"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Fresado de carpeta asfáltica",
+            "description": "Perfilado y retiro de pavimento deteriorado para renivelación, reciclado y bacheo, con perfiladora de gran escala o fresadora de minicargador.",
+            "provider": {
+              "@id": "https://vazalmaquinariapesada.com/#organizacion"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "México"
+            }
+          },
+          "seller": {
+            "@id": "https://vazalmaquinariapesada.com/#organizacion"
+          },
+          "priceCurrency": "MXN"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Nivelación y compactación de suelos",
+            "description": "Definición de niveles, conformación de subrasante y base, y compactación con vibrocompactador para mejorar las propiedades geotécnicas del terreno.",
+            "provider": {
+              "@id": "https://vazalmaquinariapesada.com/#organizacion"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "México"
+            }
+          },
+          "seller": {
+            "@id": "https://vazalmaquinariapesada.com/#organizacion"
+          },
+          "priceCurrency": "MXN"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Excavaciones",
+            "description": "Remoción y extracción de material para cimentaciones, rasante de caminos y cepas de tubería, con excavadora, retroexcavadora o miniexcavadora.",
+            "provider": {
+              "@id": "https://vazalmaquinariapesada.com/#organizacion"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "México"
+            }
+          },
+          "seller": {
+            "@id": "https://vazalmaquinariapesada.com/#organizacion"
+          },
+          "priceCurrency": "MXN"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Demoliciones",
+            "description": "Demolición de estructuras de concreto y pavimento con martillo hidráulico montado en excavadora, retroexcavadora o minicargador.",
+            "provider": {
+              "@id": "https://vazalmaquinariapesada.com/#organizacion"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "México"
+            }
+          },
+          "seller": {
+            "@id": "https://vazalmaquinariapesada.com/#organizacion"
+          },
+          "priceCurrency": "MXN"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Retiro de escombro",
+            "description": "Carga y acarreo de escombro y producto de excavación con payloader y camión torton o góndola de 7, 14 y 30 m³.",
+            "provider": {
+              "@id": "https://vazalmaquinariapesada.com/#organizacion"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "México"
+            }
+          },
+          "seller": {
+            "@id": "https://vazalmaquinariapesada.com/#organizacion"
+          },
+          "priceCurrency": "MXN"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Construcción de obra pública",
+            "description": "Ejecución y suministro de maquinaria para obra pública federal, estatal y municipal: carreteras, vialidades, terracerías, drenaje y bacheo.",
+            "provider": {
+              "@id": "https://vazalmaquinariapesada.com/#organizacion"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "México"
+            }
+          },
+          "seller": {
+            "@id": "https://vazalmaquinariapesada.com/#organizacion"
+          },
+          "priceCurrency": "MXN"
+        }
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Ventas y rentas",
+        "name": "Catálogo de ventas y rentas",
+        "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#catalogo",
         "itemListElement": [
-          { "@type": "OfferCatalog", "name": "Maquinaria pesada", "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de excavadora con o sin martillo" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de retroexcavadora" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de motoconformadora" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de payloader" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de vibrocompactador" } }
-          ]},
-          { "@type": "OfferCatalog", "name": "Maquinaria ligera", "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de planta de luz" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de compresor de aire" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de plancha vibradora" } }
-          ]},
-          { "@type": "OfferCatalog", "name": "Servicios de obra", "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tendido de carpeta asfáltica" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fresado de carpeta asfáltica" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nivelación y compactación de suelos" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Excavaciones" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Demoliciones y retiro de escombro" } }
-          ]}
+          {
+            "@type": "OfferCatalog",
+            "name": "Maquinaria pesada",
+            "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#catalogo",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de camión Torton y/o Góndola, 7, 14 y 30 m³",
+                  "description": "Acarreo de material, tepetate y escombro. Cajas de 7, 14 y 30 m³ para terracerías, despalme y retiro de producto de excavación.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-camion-torton-gondola"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de camión de servicio (Marimba)",
+                  "description": "Transporte de tubería, poste, varilla y material largo en obra lineal, drenaje y electrificación.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-camion-marimba"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de camión con lowboy o cama baja",
+                  "description": "Traslado de maquinaria pesada entre frentes de obra. Movilización de excavadora, motoconformadora y payloader en toda la República.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-camion-lowboy"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de concretera",
+                  "description": "Mezclado de concreto a pie de obra para firmes, guarniciones, banquetas y colados de volumen medio.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-concretera"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de excavadora con o sin martillo 320, 325, 330, 336 y 345",
+                  "description": "Excavación, carga y demolición con martillo hidráulico. De 20 a 45 toneladas para zanjas, drenaje, terracerías y obra pesada.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-excavadora"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de grúa Hiab 2½ toneladas",
+                  "description": "Grúa articulada sobre camión para carga, descarga y maniobras de hasta 2.5 toneladas en obra urbana.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-grua-hiab"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de grúa Titan 18 toneladas",
+                  "description": "Izaje de estructura, trabes y equipo pesado hasta 18 toneladas en obra civil e industrial.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-grua-titan"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de genie 12 y 15 m",
+                  "description": "Plataforma de elevación de 12 y 15 metros para trabajo en altura, fachadas, naves industriales y mantenimiento.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-genie"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de minicargador con o sin martillo",
+                  "description": "Limpieza, acarreo corto, despalme y demolición ligera en espacios reducidos. Admite martillo, fresadora y barredora.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-minicargador"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de miniexcavadora",
+                  "description": "Excavación en espacios confinados: zanjas de agua potable, drenaje sanitario y obra urbana de poca maniobra.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-miniexcavadora"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de montacargas de 1½ a 4½ toneladas",
+                  "description": "Maniobra y estiba de material en almacén, planta industrial y patio de obra, de 1.5 a 4.5 toneladas.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-montacargas"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de motoconformadora con o sin ripper, 12 G, 120 B, 135 H, 140 H, 143 H",
+                  "description": "Nivelación de terracerías, conformación de subrasante y base hidráulica, y escarificado con ripper para caminos y vialidades.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-motoconformadora"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de payloader 938 H, 950 H y 966 H",
+                  "description": "Cargador frontal para carga de material, alimentación de planta y acarreo corto. Cucharones de 2 a 4 m³.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-payloader"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de pipa de agua de 10,000, 12,000 y 15,000 litros",
+                  "description": "Riego para compactación, control de polvo y humedecido de terracerías. Capacidades de 10,000 a 15,000 litros.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-pipa-agua"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de retroexcavadora con o sin martillo 416 D, E, F y 420 D, E, F",
+                  "description": "Excavación, relleno y carga en obra urbana. Con martillo hidráulico para ruptura de pavimento y concreto.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-retroexcavadora"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de vibrocompactador y vibrocompactador pata de cabra",
+                  "description": "Compactación de terracerías, base y sub-base. Pata de cabra para suelos arcillosos y rellenos de alto espesor.",
+                  "serviceType": "Renta de maquinaria pesada",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-vibrocompactador"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Maquinaria ligera",
+            "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#catalogo",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de bailarina",
+                  "description": "Compactador de impacto para zanjas, rellenos y áreas estrechas donde no entra el rodillo.",
+                  "serviceType": "Renta de maquinaria ligera",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-bailarina"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de bomba de agua",
+                  "description": "Achique y desagüe de excavaciones, zanjas y cárcamos inundados en obra.",
+                  "serviceType": "Renta de maquinaria ligera",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-bomba-agua"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de compresor de aire",
+                  "description": "Suministro de aire para rotomartillo, pistola y herramienta neumática en demolición y ruptura.",
+                  "serviceType": "Renta de maquinaria ligera",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-compresor"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de cortadora de concreto",
+                  "description": "Corte recto de pavimento asfáltico y losa de concreto para rupturas, registros y juntas.",
+                  "serviceType": "Renta de maquinaria ligera",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-cortadora-concreto"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de planta de luz de diferentes kW",
+                  "description": "Generación eléctrica para frentes de obra sin acometida, trabajos nocturnos y campamentos.",
+                  "serviceType": "Renta de maquinaria ligera",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-planta-luz"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de plancha vibradora",
+                  "description": "Compactación superficial de base, adoquín y carpeta en banquetas, andadores y bacheo.",
+                  "serviceType": "Renta de maquinaria ligera",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-plancha-vibradora"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Tren completo de asfalto",
+            "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#asfalto",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de barredora",
+                  "description": "Limpieza de la superficie antes del riego de liga. Retira polvo y material suelto para garantizar la adherencia.",
+                  "serviceType": "Tendido de asfalto",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-barredora"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de minicargadores con aditamento de fresadora de 55 a 60 de corte a lo ancho",
+                  "description": "Fresado puntual de 55 a 60 cm de ancho para bacheo, cajeo y despiece de carpeta en obra urbana.",
+                  "serviceType": "Tendido de asfalto",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-fresadora-minicargador"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de neumático",
+                  "description": "Compactador de rodillo neumático para el sellado final de la carpeta y cierre de la textura.",
+                  "serviceType": "Tendido de asfalto",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-neumatico"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de pavimentadora",
+                  "description": "Tendido de carpeta asfáltica con espesor y bombeo controlados, de 5 a 10 cm en un solo paso.",
+                  "serviceType": "Tendido de asfalto",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-pavimentadora"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de perfiladora PM 465, PM 565, PM 200, PM 201, RX 500 y PR 600",
+                  "description": "Fresado de carpeta asfáltica a gran escala para renivelación, reciclado y retiro de pavimento deteriorado.",
+                  "serviceType": "Tendido de asfalto",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-perfiladora"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de petrolizadora",
+                  "description": "Aplicación de riego de impregnación y riego de liga con dosificación uniforme antes del tendido.",
+                  "serviceType": "Tendido de asfalto",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-petrolizadora"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Renta y venta de vibrocompactador tipo tándem",
+                  "description": "Compactación primaria de la carpeta recién tendida con rodillo doble liso vibratorio.",
+                  "serviceType": "Tendido de asfalto",
+                  "provider": {
+                    "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "México"
+                  },
+                  "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-tandem"
+                },
+                "availability": "https://schema.org/InStock",
+                "businessFunction": [
+                  "https://schema.org/LeaseOut",
+                  "https://schema.org/Sell"
+                ],
+                "priceCurrency": "MXN",
+                "seller": {
+                  "@id": "https://vazalmaquinariapesada.com/#organizacion"
+                }
+              }
+            ]
+          }
         ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vazalmaquinariapesada.com/#sitio",
+      "url": "https://vazalmaquinariapesada.com/",
+      "name": "Vazal Maquinaria Pesada",
+      "inLanguage": "es-MX",
+      "publisher": {
+        "@id": "https://vazalmaquinariapesada.com/#organizacion"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://vazalmaquinariapesada.com/ventas-y-rentas.html",
       "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html",
-      "name": "Renta y Venta de Maquinaria Pesada en Metepec y Toluca | Vazal",
+      "name": "Renta y Venta de Maquinaria Pesada en Metepec, Toluca y toda México | Vazal",
+      "description": "Catálogo de 29 líneas de maquinaria pesada y ligera en renta y venta, trenes completos de asfalto y servicios de obra pública. Cotiza al 722 896 4282.",
       "inLanguage": "es-MX",
-      "isPartOf": { "@id": "https://vazalmaquinariapesada.com/#organizacion" },
+      "isPartOf": {
+        "@id": "https://vazalmaquinariapesada.com/#sitio"
+      },
+      "about": {
+        "@id": "https://vazalmaquinariapesada.com/#organizacion"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://vazalmaquinariapesada.com/images/PicsArt_02-01-03.08.47.jpg",
+        "width": 558,
+        "height": 307
+      },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://vazalmaquinariapesada.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Ventas y Rentas", "item": "https://vazalmaquinariapesada.com/ventas-y-rentas.html" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://vazalmaquinariapesada.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ventas y Rentas",
+            "item": "https://vazalmaquinariapesada.com/ventas-y-rentas.html"
+          }
         ]
       }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#catalogo-lista",
+      "name": "Catálogo de maquinaria en renta y venta",
+      "numberOfItems": 29,
+      "itemListOrder": "https://schema.org/ItemListUnordered",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Camión Torton y/o Góndola, 7, 14 y 30 m³",
+          "description": "Acarreo de material, tepetate y escombro. Cajas de 7, 14 y 30 m³ para terracerías, despalme y retiro de producto de excavación.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-camion-torton-gondola"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Camión de servicio (Marimba)",
+          "description": "Transporte de tubería, poste, varilla y material largo en obra lineal, drenaje y electrificación.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-camion-marimba"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Camión con lowboy o cama baja",
+          "description": "Traslado de maquinaria pesada entre frentes de obra. Movilización de excavadora, motoconformadora y payloader en toda la República.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-camion-lowboy"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Concretera",
+          "description": "Mezclado de concreto a pie de obra para firmes, guarniciones, banquetas y colados de volumen medio.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-concretera"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Excavadora con o sin martillo 320, 325, 330, 336 y 345",
+          "description": "Excavación, carga y demolición con martillo hidráulico. De 20 a 45 toneladas para zanjas, drenaje, terracerías y obra pesada.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-excavadora"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Grúa Hiab 2½ toneladas",
+          "description": "Grúa articulada sobre camión para carga, descarga y maniobras de hasta 2.5 toneladas en obra urbana.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-grua-hiab"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Grúa Titan 18 toneladas",
+          "description": "Izaje de estructura, trabes y equipo pesado hasta 18 toneladas en obra civil e industrial.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-grua-titan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Genie 12 y 15 m",
+          "description": "Plataforma de elevación de 12 y 15 metros para trabajo en altura, fachadas, naves industriales y mantenimiento.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-genie"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Minicargador con o sin martillo",
+          "description": "Limpieza, acarreo corto, despalme y demolición ligera en espacios reducidos. Admite martillo, fresadora y barredora.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-minicargador"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Miniexcavadora",
+          "description": "Excavación en espacios confinados: zanjas de agua potable, drenaje sanitario y obra urbana de poca maniobra.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-miniexcavadora"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "Montacargas de 1½ a 4½ toneladas",
+          "description": "Maniobra y estiba de material en almacén, planta industrial y patio de obra, de 1.5 a 4.5 toneladas.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-montacargas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Motoconformadora con o sin ripper, 12 G, 120 B, 135 H, 140 H, 143 H",
+          "description": "Nivelación de terracerías, conformación de subrasante y base hidráulica, y escarificado con ripper para caminos y vialidades.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-motoconformadora"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "Payloader 938 H, 950 H y 966 H",
+          "description": "Cargador frontal para carga de material, alimentación de planta y acarreo corto. Cucharones de 2 a 4 m³.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-payloader"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "Pipa de agua de 10,000, 12,000 y 15,000 litros",
+          "description": "Riego para compactación, control de polvo y humedecido de terracerías. Capacidades de 10,000 a 15,000 litros.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-pipa-agua"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "Retroexcavadora con o sin martillo 416 D, E, F y 420 D, E, F",
+          "description": "Excavación, relleno y carga en obra urbana. Con martillo hidráulico para ruptura de pavimento y concreto.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-retroexcavadora"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "Vibrocompactador y vibrocompactador pata de cabra",
+          "description": "Compactación de terracerías, base y sub-base. Pata de cabra para suelos arcillosos y rellenos de alto espesor.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-vibrocompactador"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "name": "Bailarina",
+          "description": "Compactador de impacto para zanjas, rellenos y áreas estrechas donde no entra el rodillo.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-bailarina"
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "name": "Bomba de agua",
+          "description": "Achique y desagüe de excavaciones, zanjas y cárcamos inundados en obra.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-bomba-agua"
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "name": "Compresor de aire",
+          "description": "Suministro de aire para rotomartillo, pistola y herramienta neumática en demolición y ruptura.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-compresor"
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "name": "Cortadora de concreto",
+          "description": "Corte recto de pavimento asfáltico y losa de concreto para rupturas, registros y juntas.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-cortadora-concreto"
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "name": "Planta de luz de diferentes kW",
+          "description": "Generación eléctrica para frentes de obra sin acometida, trabajos nocturnos y campamentos.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-planta-luz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "name": "Plancha vibradora",
+          "description": "Compactación superficial de base, adoquín y carpeta en banquetas, andadores y bacheo.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-plancha-vibradora"
+        },
+        {
+          "@type": "ListItem",
+          "position": 23,
+          "name": "Barredora",
+          "description": "Limpieza de la superficie antes del riego de liga. Retira polvo y material suelto para garantizar la adherencia.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-barredora"
+        },
+        {
+          "@type": "ListItem",
+          "position": 24,
+          "name": "Minicargadores con aditamento de fresadora de 55 a 60 de corte a lo ancho",
+          "description": "Fresado puntual de 55 a 60 cm de ancho para bacheo, cajeo y despiece de carpeta en obra urbana.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-fresadora-minicargador"
+        },
+        {
+          "@type": "ListItem",
+          "position": 25,
+          "name": "Neumático",
+          "description": "Compactador de rodillo neumático para el sellado final de la carpeta y cierre de la textura.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-neumatico"
+        },
+        {
+          "@type": "ListItem",
+          "position": 26,
+          "name": "Pavimentadora",
+          "description": "Tendido de carpeta asfáltica con espesor y bombeo controlados, de 5 a 10 cm en un solo paso.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-pavimentadora"
+        },
+        {
+          "@type": "ListItem",
+          "position": 27,
+          "name": "Perfiladora PM 465, PM 565, PM 200, PM 201, RX 500 y PR 600",
+          "description": "Fresado de carpeta asfáltica a gran escala para renivelación, reciclado y retiro de pavimento deteriorado.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-perfiladora"
+        },
+        {
+          "@type": "ListItem",
+          "position": 28,
+          "name": "Petrolizadora",
+          "description": "Aplicación de riego de impregnación y riego de liga con dosificación uniforme antes del tendido.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-petrolizadora"
+        },
+        {
+          "@type": "ListItem",
+          "position": 29,
+          "name": "Vibrocompactador tipo tándem",
+          "description": "Compactación primaria de la carpeta recién tendida con rodillo doble liso vibratorio.",
+          "url": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#eq-tandem"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://vazalmaquinariapesada.com/ventas-y-rentas.html#preguntas",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta rentar maquinaria pesada en el Estado de México?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El precio depende del equipo, del periodo de renta, de si va con o sin operador y de la distancia del frente de obra para la movilización. Envíanos el equipo que necesitas, el municipio y las fechas, y te regresamos una cotización formal con todo desglosado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La renta incluye operador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tú decides. Entregamos el equipo con operador, con personal con experiencia en obra pública y privada, o sin operador si tu cuadrilla lo va a manejar. Indícalo en la solicitud de cotización."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Rentan por día, por semana o por mes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los tres esquemas. Ajustamos el periodo al programa de obra: desde maniobras de un día hasta contratos de varios meses con equipo asignado a un frente fijo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Quién traslada la maquinaria hasta la obra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nosotros. Contamos con camión con lowboy y cama baja propios para movilizar excavadora, motoconformadora, payloader y vibrocompactador entre frentes. La movilización se cotiza según la distancia y va incluida en la propuesta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajan con dependencias de gobierno y obra pública?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Participamos en obra pública federal, estatal y municipal, y también atendemos a las constructoras que ejecutan esos contratos. Integramos el expediente de documentación que piden las convocatorias y facturamos a nombre de Arrendadora Vazal, S.A. de C.V. Ver el detalle de obra pública."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué estados tienen cobertura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Operamos en toda la República Mexicana, con presencia en 32 estados. Nuestra base está en Metepec, Estado de México, por lo que la respuesta es más rápida en Toluca, Metepec, Lerma, Zinacantepec, el Valle de Toluca y la Zona Metropolitana del Valle de México."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué incluye un tren completo de asfalto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El tren completo cubre todo el proceso con un solo proveedor: perfiladora para el fresado, barredora para limpiar la superficie, petrolizadora para el riego de impregnación y de liga, pavimentadora para el tendido de la carpeta de 5 a 10 cm, y vibrocompactador tándem y neumático para la compactación y el sellado. Ver cómo se ejecuta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Además de rentar, venden maquinaria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Manejamos venta y renta de maquinaria pesada y ligera. Si buscas comprar, dinos qué línea de equipo te interesa y revisamos disponibilidad de inventario."
+          }
+        }
+      ]
     }
   ]
 }
@@ -1614,13 +3399,14 @@ p:last-child{margin-bottom:0}
   var datalist = document.getElementById('equipos');
   var okBox = document.getElementById('formOk');
 
-  document.querySelectorAll('.eq-list li > span').forEach(function (span) {
+  document.querySelectorAll('.eq-list .eq-name').forEach(function (el) {
     var opt = document.createElement('option');
-    opt.value = span.textContent.trim().replace(/\.$/, '');
+    opt.value = el.textContent.trim().replace(/\.$/, '');
     datalist.appendChild(opt);
   });
   document.querySelectorAll('.eq-cta').forEach(function (btn) {
-    var name = btn.previousElementSibling.textContent.trim().replace(/\.$/, '');
+    var nameEl = btn.parentElement.querySelector('.eq-name');
+    var name = (nameEl ? nameEl.textContent : '').trim().replace(/\.$/, '');
     btn.setAttribute('aria-label', 'Cotizar ' + name);
     btn.addEventListener('click', function () {
       equipoInput.value = name;

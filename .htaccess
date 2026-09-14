@@ -1,0 +1,66 @@
+# ==========================================================================
+#  Vazal Maquinaria Pesada — configuración Apache
+#
+#  ⚠️  LEER ANTES DE SUBIR
+#  Este archivo va en la RAÍZ del hosting actual (el servidor es Apache).
+#  Cambia el comportamiento de URLs que hoy ya responden, así que conviene
+#  subirlo y verificar las redirecciones una por una.
+#
+#  Bloque 1 — www -> sin www. Es el arreglo más importante: hoy los dos
+#  hosts responden 200 y Google ve el sitio duplicado dos veces.
+#
+#  Bloque 2 — páginas heredadas duplicadas. Confirmar con Vazal que no se
+#  usan antes de activarlo; si alguna sí se usa, borrar esa línea.
+# ==========================================================================
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # ---- 1 · Host canónico: sin www, siempre https -------------------------
+  RewriteCond %{HTTP_HOST} ^www\.vazalmaquinariapesada\.com$ [NC]
+  RewriteRule ^(.*)$ https://vazalmaquinariapesada.com/$1 [R=301,L]
+
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://vazalmaquinariapesada.com/$1 [R=301,L]
+
+  # ---- 2 · Copias heredadas del sitio anterior ---------------------------
+  # Mismo contenido que las páginas buenas; compiten contra ellas en Google.
+  RewriteRule ^rentas\.html$   /ventas-y-rentas.html [R=301,L]
+  RewriteRule ^respaldo\.html$ /ventas-y-rentas.html [R=301,L]
+  RewriteRule ^home\.html$     / [R=301,L]
+</IfModule>
+
+# ---- Compresión ----------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript text/javascript
+  AddOutputFilterByType DEFLATE application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---- Caché ---------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp              "access plus 1 year"
+  ExpiresByType image/png               "access plus 1 year"
+  ExpiresByType image/jpeg              "access plus 1 year"
+  ExpiresByType image/svg+xml           "access plus 1 year"
+  ExpiresByType font/woff2              "access plus 1 year"
+  ExpiresByType text/css                "access plus 1 month"
+  ExpiresByType application/javascript  "access plus 1 month"
+  ExpiresByType text/html               "access plus 0 seconds"
+</IfModule>
+
+# ---- Tipos de contenido --------------------------------------------------
+AddType image/webp .webp
+AddType application/manifest+json .webmanifest
+
+# ---- Cabeceras de seguridad ---------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# ---- Evita listar el contenido de las carpetas --------------------------
+Options -Indexes
